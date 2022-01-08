@@ -17,8 +17,8 @@
 package nvml
 
 /*
-#cgo linux LDFLAGS: -ldl -Wl,--unresolved-symbols=ignore-in-object-files
-#cgo darwin LDFLAGS: -ldl -Wl,-undefined,dynamic_lookup
+#cgo linux LDFLAGS: -ldl -lnvidia-ml -Wl
+#cgo darwin LDFLAGS: -ldl -lnvidia-ml -Wl
 #cgo windows LDFLAGS: -LC:/Program\ Files/NVIDIA\ Corporation/NVSMI -lnvml
 #include "nvml.h"
 
